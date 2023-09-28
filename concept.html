@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <style>
+            h3{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <a class="navbar-brand" href="#">Chess</a>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Pieces</a>
+                </li>
+                <li>
+                    <a href="concept.html">Strategies</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Positions</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 style="text-align:center;">Concepts</h1>
+        <div class="bg-success">
+            <h3>Notation</h3>
+            <p>Notation is a way to record all the moves in chess in letters. The first capitalized letter indicates the piece being moved. The second and third letters/numbers are coordinates on the chessboard. The first letter can be K for king, Q for queen, R for rook, N for knight, B for bishop, and nothing for a pawn. The rows are numbers and the columns are letters. Examples are Qa4 and Ne5. There can also be special symbols for certain things that happen which will be explained below.</p>
+        </div>
+        <div class="bg-primary">
+            <h3>Check</h3>
+            <p>A check is basically an attack to the king. If the king is in the line of sight of an opposing piece and hypothetically  that piece can capture the king if it was their turn, then it is a check. If it is a check, you have to protect the king by either moving the king away, blocking the line of sight with another piece, and capturing the piece checking the king. You cannot do any other action. Thisw is shown in notations by a + at the end of the combination of letters.</p>
+        </div>
+        <div class="bg-danger">
+            <h3>Checkmate</h3>
+            <p>A checkmate is the goal of the game. It is when you cannot escape from a check. Because the king cannot be captured, this is how he dies. There are many strategies and patterns to acheive this goal such as a ladder checkmate which uses 2 rooks, and a bankrank checkmate with the king trapped behind his pawns and a rook on the same file as it. To show this on notations, you have to add a # to the end of the combination of letters.</p>
+        </div>
+        <div class="bg-info">
+            <h3>Capture</h3>
+            <p>A capture is when you take another piece. If the piece's path is obstructed by an opposing piece, you can capture the piece thus taking it off the board and removing it from the game. There are many strategies to do so such as forks, pins, skewers, and discovered attacks. Be careful of exchanges where both you and the opponent get a piece captures, queens are worth 9 points, rooks are worth 5, bishops and knights are worth 3, and a pawn is worth 1. To show this on notations, put a x in between the letters.</p>
+        </div>
+        <div class="bg-warning">
+            <h3>Castle</h3>
+            <p>A castle is a special type of move that requires specific conditions in order to be possible. It involves the king and the rook. If there are no pieces obstructing and no checks in between, then you can move the king 2 spaces toward the rook, and the rook to opposite side of the king. The king and rook also must have never moved at all before in the game. You can do this action on both sides.This action is a very good defensive move and ensures the safety of your king for quite some time. To show this on notations, on the shortside write o-o and on the long side write o-o-o.</p>
+        </div>
+        <div class="bg-success">
+            <h3>Stalemate</h3>
+            <p>A stale mate is an outcome in the game where neither person wins. This can happen if one of the players can't move any of their pieces because otherwise it would be a check. This ussually happens when one person is winning by a large advantage and makes a big mistake. Another thing would be insufficient material where neither person has enough pieces to checkmate. This is when one person has only the king, or a king and a knight, or a king and a bishop. A pawn can promote and a queen and a king can checkmate as well as a rook and a king.</p>
+        </div>
+        <div class="bg-danger">
+            <h3>Promote</h3>
+            <p>A promotion is a special move that can be a serious threat, a strategy, and a way to change the tides in an endgame. It has to do with a pawn reaching the opposite side of the board. Because a pawn cannot go backward, it hass to be able to do something when it reaches the end of the board. What it does is that it promotes and can become a rook, bishop, knight, or even a queen. In the endgames, there aren't many pieces left so a single queen can be everything. There is also a lot of pawns in the endgame. Victory hinges on succeding to promote. To show this on notations, add an = and the letter of the piece the pawn is becoming.</p>
+        </div>
+        <div class="bg-primary">
+            <h3>Fork</h3>
+            <p>A fork is a stragetical move that can be a big problem for the opponent if the target pieces are a king, a queen, or even a rook. This is when a piece gets into a square where it can attack 2 pieces simultaneously causing the opponent to have to sacrifice a piece to save the more important one. Make sure however that the opponent can capture your forking piece of check you with one of their forked pieces. That would allow them to escape the situation. Also make sure your forking piece is low valued because you might have to exchange your piece for another piece if it is protected and you want to be getting the better piece.</p>
+        </div>
+        <div class="bg-danger">
+            <h3>Pin</h3>
+            <p>A pin is a strategical move that can lead to more material, a lot of exchanges, and a movemnt restriction on the opponent. This is when a low point piece is in front of an opponents piece blocking it from a high point piece. This would mean that if it is a relative pin, they would lose material if the low point piece moved, but in an absolute pin where the king is behind another piece, it is impossible to do so. Ussually, the high point piece is the only thing protecting the LP piece. Thus, the HP piece can't move either. Then the pinning piece might get backup in PPPP(put pressure on the pinned piece) by adding another attack, and then another defender comes in and so on. It build up until the pressure is finally released and a ton of exchanges happen.</p>
+        </div>
+        <div class="bg-info">
+            <h3>Skewer</h3>
+            <p>A skewer is an immediate strategical move that will lead to more material. It is when a HP piece is in front of a LP piece in the path of an opposing piece. It is the opposite of a pin and the person will immediately move the HP piece away so you can th=ake the LP piece. This is very usable in the endgame, especially if the queen is behind the king. Make sure that the skewering piece cannot be captured. Also, the skewering piece should be a low point piece because there is no point in doing it if you're only going to get a LP piece for a HP piece. </p>
+        </div>
+        <div class="bg-warning">
+            <h3>Discovered attack</h3>
+            <p>A discovered attack is a very important, and dangerous tactic. It happens when a piece moves out of the way of another piece that now can attack a HP piece while the piece that moveda attacks another HP piece. You however need to make sure the pieces are aquedately protected because otherwise there can be serious consequences. This is unless it is a discovered check where a piece moves out of the way of another piece that is now checking the piece while the piece that moved attacks a queen or a rook or some other HP piece. This would force the player to sacrifice their queen or rook. In fact, because it is a check, your moved piece might be attacked and could be killed in 100 different ways but it still wouldn't matter because the king would still have to move. Just make sure it can't be captured by the king itself. An even more specific name is double check where bothe pieces are checking the king which means that the king has to move and cannot just block or capture. This is useful for checkmates or checkmate patterns.</p>
+        </div>
+        <div class="bg-success">
+            <h3>En Passant</h3>
+            <p>En Passant is a rare and very special move that is ever played. It has very specific moves. First, your pawn must be on the file 4 ranks before the end of the board. An opponents pawn that is right next to your pawn must move 2 steps forward. Then, you can capture the pawn as if it only move 1 space forward. Thus, the transalation "In Passing". Also, if these situations occur but you wait 1 or more turns you cannot do it anymore. You can only do it at the first oppurtunity.</p>
+        </div>
+    </body>
+</html>
